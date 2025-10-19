@@ -2,3 +2,5 @@ node_modules/
 dist/
 wp-content/themes/movie_theme/dist/
 package-lock.json
+.env
+wp-content/uploads/
