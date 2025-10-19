@@ -1,0 +1,19 @@
+{
+  "name": "prueba-tecnica---filmpedia",
+  "version": "1.0.0",
+  "description": "```docker-compose up -d```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.93.2",
+    "vite": "^7.1.10",
+    "webpack": "^5.102.1"
+  }
+}
