@@ -422,3 +422,89 @@
   padding: 48px 0;
   color: #4B5563;
 }
+
+
+
+// Tablet (768px - 1023px)
+@media (max-width: 1023px) and (min-width: 768px) {
+  .header-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-meta-container {
+    gap: 24px;
+  }
+
+  .small-card-title {
+    font-size: 20px;
+  }
+}
+
+// Mobile (< 768px)
+@media (max-width: 767px) {
+  // Containers
+  .page-container {
+    padding: 24px 16px 16px 16px;
+  }
+
+  .movies-container {
+    padding: 0 16px 24px 16px;
+  }
+
+  // Header
+  .header-title {
+    font-size: 16px;
+  }
+
+  .header-subtitle {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  // Hero Card
+  .hero-card {
+    min-height: 300px;
+    background-position: center;
+  }
+
+  .hero-content {
+    padding: 24px;
+    align-items: flex-start;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .tag {
+    font-size: 14px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .hero-meta-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  // Cards Grid
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .small-card {
+    height: 350px;
+  }
+
+  .small-card-title {
+    font-size: 18px;
+  }
+}
