@@ -1,4 +1,8 @@
-@use 'variables';
-@use 'layout';
+@use 'variables' as *;
 @use 'cards';
-@use 'responsive';
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}

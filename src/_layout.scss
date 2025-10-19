@@ -1,8 +1,0 @@
-.movies-grid { 
-    display: grid; grid-template-columns: 2fr 1fr; 
-} 
-  
-
-.movie-card:first-child { 
-    grid-row: 1 / 3; 
-}

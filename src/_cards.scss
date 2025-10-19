@@ -1,1 +1,424 @@
-// Cards styles
+@use 'variables' as *;
+
+// Page Container
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px 24px 24px;
+}
+
+.movies-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px 32px 24px;
+}
+
+// Header Styles
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-square {
+  width: 15px;
+  height: 15px;
+  background-color: $detail-color;
+  border-radius: 2px;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111827;
+  margin: 0;
+}
+
+.header-line-short {
+  width: 180px;
+  height: 2px;
+  background-color: #000000;
+  margin-top: 4px;
+}
+
+.header-line-full {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  margin-bottom: 16px;
+}
+
+.header-subtitle {
+  font-size: 24px;
+  color: #000000;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+// Hero Card
+.hero-card {
+  position: relative;
+  min-height: 420px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #111827;
+  margin-bottom: 24px;
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0.98) 50%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.1) 80%, transparent 90%);
+  z-index: 1;
+}
+
+.hero-age-badge {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: white;
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 30;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  z-index: 20;
+}
+
+.hero-content-inner {
+  max-width: 640px;
+}
+
+.category-badge {
+  display: inline-block;
+  background: $detail-color;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+.hero-title {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+}
+
+.hero-description {
+  color: rgba(255,255,255,0.9);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 560px;
+}
+
+.hero-meta-container {
+  display: flex;
+  gap: 40px;
+}
+
+// Valoració Section
+.valoracio-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.valoracio-title {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.rating-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rating-label {
+  color: white;
+  font-size: 12px;
+  width: 80px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.rating-bar-container {
+  width: 208px;
+  background: rgba(255,255,255,0.2);
+  height: 8px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.rating-bar-fill {
+  background: $detail-color;
+  height: 100%;
+  border-radius: 9999px;
+}
+
+// Ambits Section
+.ambits-section {
+  margin-bottom: 12px;
+}
+
+.ambits-title {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ambits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 6px 20px;
+  grid-auto-flow: row;
+}
+
+.ambit-item {
+  color: rgba(255,255,255,0.9);
+  font-size: 12px;
+}
+
+// Small Cards Grid
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.small-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #111827;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.small-card-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.small-card-age-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 30;
+}
+
+.small-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 28px;
+  z-index: 20;
+}
+
+.small-card-default-content {
+  .category-badge {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.small-card-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.small-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+// Small Card Hover State
+.small-card-hover-content {
+  display: none;
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  right: 28px;
+}
+
+.small-card:hover {
+  .small-card-hover-content {
+    display: block;
+  }
+
+  .small-card-gradient {
+    background: linear-gradient(to top, rgba(0,0,0,0.98), rgba(0,0,0,0.85), rgba(0,0,0,0.6)) !important;
+  }
+
+  .small-card-default-content {
+    display: none;
+  }
+
+  .small-card-age-badge {
+    display: none;
+  }
+}
+
+.small-card-description {
+  color: rgba(255,255,255,0.9);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.small-card-meta {
+  display: flex;
+  gap: 24px;
+}
+
+.small-card-valoracio {
+  flex-shrink: 0;
+
+  .valoracio-section {
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .valoracio-title {
+    font-size: 10px;
+  }
+
+  .info-icon {
+    width: 16px;
+    height: 16px;
+
+    span {
+      font-size: 10px;
+    }
+  }
+
+  .rating-bars {
+    gap: 6px;
+  }
+
+  .rating-row {
+    gap: 8px;
+  }
+
+  .rating-label {
+    font-size: 10px;
+    width: 60px;
+  }
+
+  .rating-bar-container {
+    width: 100px;
+    height: 6px;
+  }
+}
+
+.small-card-temes {
+  flex: 1;
+
+  .ambits-section {
+    margin-bottom: 8px;
+  }
+
+  .ambits-title {
+    font-size: 10px;
+  }
+
+  .ambits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ambit-item {
+    font-size: 10px;
+  }
+}
+
+// No Movies Message
+.no-movies {
+  text-align: center;
+  padding: 48px 0;
+  color: #4B5563;
+}
