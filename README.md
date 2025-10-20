@@ -34,43 +34,37 @@ npm install
 npm run build
 ```
 
-5. Access WordPress at http://localhost:8080
+5. Import database (includes sample movies, ACF fields, and data)
 
-6. Complete WordPress installation
+```bash
+docker-compose exec -T db mysql -u root -ptest filmpedia_database < backup.sql
+```
+
+6. Access WordPress at http://localhost:8080
+
+7. Complete WordPress installation
 
    - Language: Select your language
    - Site Title: Filmpedia
    - Username: admin (or your choice)
    - Password: (set a strong password)
    - Email: your@email.com
-   - Database Configuration:
-     - Database Name: wordpress
-     - Username: root
-     - Password: test
-     - Database Host: db
-     - Table Prefix: wp\_
 
-7. Activate Movie Theme
+8. Activate Movie Theme
 
    - Go to Appearance → Themes
    - Activate "Movie Theme"
 
-8. Activate ACF plugin
+9. Activate ACF plugin
 
    - Go to Plugins
    - Activate "Advanced Custom Fields"
 
-9. Import database (includes sample movies, ACF fields, and data)
-
-```bash
-docker-compose exec -T db mysql -u root -ptest filmpedia_database < backup.sql
-```
-
 10. Upload movie images
 
-   - Go to Media → Add New
-   - Drag and drop all movie images from your source
-   - Edit each Película post and assign the corresponding image to the "imatge_de_fons" field
+- Go to Media → Add New
+- Drag and drop all movie images from your source
+- Edit each Película post and assign the corresponding image to the "imatge_de_fons" field
 
 11. Go to WordPress Admin → Settings → Permalinks and click "Save Changes" without changing anything
 
