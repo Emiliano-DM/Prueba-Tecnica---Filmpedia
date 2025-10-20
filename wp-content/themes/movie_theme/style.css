@@ -1,0 +1,13 @@
+/*
+Theme Name: Movie Theme
+Theme URI: https://github.com/Emiliano-DM/Prueba-Tecnica---Filmpedia
+Author: Emiliano
+Description: A custom WordPress theme for displaying movies (Filmpedia)
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: movie-theme
+Tags: movies, custom-post-types, responsive
+*/
+
+/* Main styles are loaded via functions.php from the dist folder */
