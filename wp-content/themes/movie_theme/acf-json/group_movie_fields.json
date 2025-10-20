@@ -1,0 +1,122 @@
+{
+    "key": "group_movie_fields",
+    "title": "Movie Fields",
+    "fields": [
+        {
+            "key": "field_imatge_de_fons",
+            "label": "Imatge de Fons",
+            "name": "imatge_de_fons",
+            "type": "image",
+            "instructions": "Background image for the movie card",
+            "required": 1,
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_edad",
+            "label": "Edad",
+            "name": "edad",
+            "type": "text",
+            "instructions": "Age rating (e.g., \"15+ anys\")",
+            "required": 1,
+            "default_value": "",
+            "placeholder": "15+ anys"
+        },
+        {
+            "key": "field_descripcion",
+            "label": "Descripción",
+            "name": "descripcion",
+            "type": "textarea",
+            "instructions": "Movie description",
+            "required": 1,
+            "rows": 4
+        },
+        {
+            "key": "field_ludic",
+            "label": "Lúdic",
+            "name": "ludic",
+            "type": "number",
+            "instructions": "Ludic rating (0-100)",
+            "required": 1,
+            "default_value": 0,
+            "min": 0,
+            "max": 100,
+            "step": 1
+        },
+        {
+            "key": "field_cultural",
+            "label": "Cultural",
+            "name": "cultural",
+            "type": "number",
+            "instructions": "Cultural rating (0-100)",
+            "required": 1,
+            "default_value": 0,
+            "min": 0,
+            "max": 100,
+            "step": 1
+        },
+        {
+            "key": "field_educatiu",
+            "label": "Educatiu",
+            "name": "educatiu",
+            "type": "number",
+            "instructions": "Educational rating (0-100)",
+            "required": 1,
+            "default_value": 0,
+            "min": 0,
+            "max": 100,
+            "step": 1
+        },
+        {
+            "key": "field_artistic",
+            "label": "Artístic",
+            "name": "artistic",
+            "type": "number",
+            "instructions": "Artistic rating (0-100)",
+            "required": 1,
+            "default_value": 0,
+            "min": 0,
+            "max": 100,
+            "step": 1
+        },
+        {
+            "key": "field_ambits",
+            "label": "Àmbits",
+            "name": "ambits",
+            "type": "checkbox",
+            "instructions": "Select relevant ambits",
+            "required": 0,
+            "choices": {
+                "sociologia": "Sociologia",
+                "igualtat_genere": "Igualtat de gènere",
+                "lgbtqi": "LGBTQI+",
+                "desigualtat": "Desigualtat",
+                "discriminacio_violencia": "Discriminació i violència",
+                "mon_digital": "Món digital",
+                "cultures_mon": "Cultures del món",
+                "diversitat": "Diversitat",
+                "identitat": "Identitat"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "layout": "vertical"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "peliculas"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Custom fields for movie recommendations"
+}
